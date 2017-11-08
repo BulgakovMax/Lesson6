@@ -1,0 +1,31 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Home1Four {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int[] array = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        System.out.println(Arrays.toString(array));
+
+        System.out.println("Enter the value from the array");
+        int digit = sc.nextInt();
+
+        int index = result((array), digit);
+        System.out.println("Idnex of value is " + index);
+    }
+
+    public static int result(int[] array, int digit) {
+
+        for (int i = 0; i <= array.length; i++) {
+
+            if (array[i] == digit) {
+                return i;
+            } else {
+                return -1;
+            }
+        }
+        return -1;
+    }
+}
+
