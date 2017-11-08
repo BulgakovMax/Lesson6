@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Home1Two {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" Enter the text");
+        String s = sc.nextLine();
+        System.out.println("Enter real number");
+        double a = sc.nextDouble();
+        System.out.println("Enter integer");
+        int b = sc.nextInt();
+
+        System.out.println(concatenation(s, a, b));
+
+    }
+
+    public static String concatenation(String s, double a, int b) {
+
+        return s + a + b;
+    }
+}
